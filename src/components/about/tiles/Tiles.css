@@ -1,0 +1,338 @@
+:root {
+  --overlay_color: white;
+}
+
+.tiles_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.tile {
+  width: 200px;
+  height: 200px;
+  margin: 10px 10px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.tile h3, .tile p {
+  text-align: center;
+}
+
+.tile > img {
+  position: absolute;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--overlay_color);
+  width: 100%;
+  opacity: 0;
+}
+
+.overlay-text {
+  height: 100%;
+}
+
+.overlay-programming {
+  height: auto;
+  top: 35%;
+}
+
+.overlay-programming img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tile:hover .overlay {
+  opacity: 0.9;
+}
+
+/*
+// Reset default box model properties 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Custom variables 
+:root {
+  --header_color: hsla(195, 100%, 56%, 0.4);
+  --main_color: hsla(195, 100%, 76%, 0.4);
+  --side_color: hsla(195, 100%, 66%, 0.4);
+  --tile_color: white;
+}
+
+// Fonts 
+h1 {
+  font-size: 30px;
+  font-family: "Impact", sans-serif;
+}
+
+p, h3, .wrapper h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+// Flexbox layout 
+.container {
+  // border: 10px solid red;
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 150px;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.wrapper .sidebar {
+  background-color: var(--side_color);
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .content {
+  background-color: var(--main_color);
+  flex: 1 1 auto;
+}
+
+// Website HEADER 
+.header {
+  background-color: var(--header_color);
+}
+
+.header #image {
+  flex: 0 0 150px;
+  opacity: 0.9;
+}
+
+.header #image img {
+  max-width: 150px;
+  height: auto;
+}
+
+.header #title {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: 5px;
+  background-image: url("wood_texture.jpg");
+  background-origin: border-box;
+  background-size: contain;
+}
+
+.header #title h1 {
+  font-size: 60px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+// Main CONTENT 
+.content {
+  box-sizing: border-box;
+  padding: 10px;
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.info h1 {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.info p {
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.tiles_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+ 
+}
+
+.tile {
+  width: 200px;
+  height: 200px;
+  margin: 10px 10px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.tile h3, .tile p {
+  text-align: center;
+}
+
+.tile > img {
+  position: absolute;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.title {
+  position: absolute;
+  background-color: var(--tile_color);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.skill_title {
+  height: auto;
+  // text-align: center;
+  top: 40%;
+}
+
+.tile:hover .title {
+  opacity: 0.9;
+}
+
+.skill_title img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Social Media SIDEBAR 
+.sidebar {
+  max-height: calc(100vh - 150px);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar .social_media {
+  width: 100px;
+  height: 15%;
+  text-align: center;
+}
+
+.social_media img {
+  height: 5vw;
+  width: auto;
+}
+
+// ANIMATIONS 
+// animation: website header 
+
+#title .underscore {
+  animation-name: underscore;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes underscore {
+  50% {text-decoration: none;}
+  100% {text-decoration: underline;}
+}
+
+#title .showup {
+  opacity: 0;
+  animation-name: showup;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showup {
+  0% {opacity: 0;}
+  50% {opacity: 1; text-decoration: none;}
+  100% {opacity: 1; text-decoration: underline;}
+}
+
+
+// animation: content tiles 
+.tile{
+  animation-name: tiles;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.about_me {
+  animation-duration: 1s;
+}
+
+.hobby {
+  animation-duration: 1.5s;
+}
+
+.skill {
+  animation-duration: 2s;
+}
+
+.favorite {
+  animation-duration: 2.5s;
+}
+
+@keyframes tiles {
+  0% {left: 100%;}
+  100% {left: 0%;}
+}
+
+// RESPONSIVE DESIGN 
+@media all and (max-width: 850px) {
+  .header #title h1 { 
+    font-size: 25px; 
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .wrapper .content {
+    max-height: max-content;
+    overflow: hidden;
+  }
+
+  .wrapper .sidebar {
+    flex: 0 0 70px;
+    flex-direction: row;
+
+  }
+
+  .sidebar .social_media {
+    width: 15vw;
+    height: auto;}
+
+  .container {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .header #title h1 { 
+    font-size: 20px; 
+  }
+
+}
+
+*/
