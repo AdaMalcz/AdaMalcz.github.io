@@ -13,7 +13,7 @@ const TrumpTravel = () => {
           technologies="HTML, CSS, JavaScript" 
           group="4 people" 
           time="2 weeks" 
-          repo={<h3><i class="fab fa-github"></i></h3>}
+          repo={<h3><i className="fab fa-github"></i></h3>}
           link="https://github.com/AdaMalcz/dt.Trump"
         />
         <p>Main goal of the project was using JavaScript skills in practice (especially using external API's) to create interactive website.</p>

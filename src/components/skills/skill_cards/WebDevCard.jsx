@@ -11,8 +11,8 @@ const WebDevCard = () => {
       path="/skill_webdev.png"
       experience={
         <div>
-          <p>My adventure with Web Development (and front-end at all) started on Coders Camp in Wrocław (October 2019). After passing the recruitment stages (motivation letter and test from the first part of materials) I was assigned to a group of 8 people and realised five projects (1 solo and 4 group) with some of them (unfortunatelly, until the end of the bootcamp only 4 people left in the group).</p>
-          <p>Becouse of high overall score from tests and projects I got certificate, that confirms acquired skills. All project details and links can be found in proper Projects section.</p>
+          <p>My adventure with Web Development and front-end started on Coders Camp in Wrocław. After passing few recruitment stages I was assigned to a group of 8 people and realised five projects. All project details and links to repositories can be found in proper Projects section.</p>
+          <p>The course lasted three months and covered 5 materials parts, each of which ended with a test and project. I finished the course with the certificate confirming high overall score.</p>
         </div>
       }
       level="Junior"

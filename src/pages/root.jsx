@@ -14,7 +14,7 @@ import ProjectsSolo from './projects/ProjectsSolo';
 import Chess from './projects/Chess';
 import TrumpTravel from './projects/TrumpTravel';
 import BookSwap from './projects/BookSwap';
-import Contact from './Contact';
+import Contact from './Contact'; // https://www.emailjs.com/ (serverless email sending)
 
 
 const root = () => {
@@ -24,25 +24,22 @@ const root = () => {
       <MDBContainer>
         
         <header>
-          <Header title="Adam Malczewski"/>
+          <Header title="Adam Malczewski - Homepage"/>
         </header>
 
         <main>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} /> {/* TO DO: style tiles, night_owl free img, rozbudowac */}
-            <Route path="/education" component={Education} /> {/* TO DO: sekcje <h4> do osobnych komponentów, sekcja informal, stylowane tekstów w tabelach, RWD: osobny kontener z suwakiem na tabele-listy (https://mdbootstrap.com/docs/react/tables/scroll/), ~info o pracach dyplomowych */}
-            <Route path="/skills" component={Skills} /> {/* TO DO: style SkillCard mini ekrany bez maxHeight */}
-            <Route path="/projects" exact component={Projects} /> {/* TO DO: nav style, switch=>project_details, btn Project Card */}
+            <Route path="/about" component={About} />
+            <Route path="/education" component={Education} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/projects" exact component={Projects} />
             <Route path="/projects/group" exact component={ProjectsGroup} /> 
             <Route path="/projects/group/chess" component={Chess} />
             <Route path="/projects/group/trump" component={TrumpTravel} />
             <Route path="/projects/group/swap" component={BookSwap} />
-            <Route path="/projects/solo" component={ProjectsSolo} /> {/* TO DO: projects solo page - wymienić przykładowe */}
-            {/*<Route 
-              path="/contact"
-            render={props => <Contact {...props} />} />*/}
-            <Route path="/contact" component={Contact} /> {/*  TO DO: Contact page: social icons section & mail-me form section: https://www.emailjs.com/ */}
+            <Route path="/projects/solo" component={ProjectsSolo} />
+            <Route path="/contact" component={Contact} /> 
           </Switch>
         </main>
 
@@ -53,10 +50,30 @@ const root = () => {
 
 export default root;
 
-/* TO DO:
-- Home page (i inne) - znaczniki semantyczne article/section itp. (tak jak w about)
-- index.html meta section
-- header (nav) zawsze widoczny (przyklejony do ekranu?)
-- pozwolenie na wykorzystanie logo PWR w sekcji education (zamiast książki)
-- poprzydzielanie klas pod style .css
+/*
+! files cleaning
+! Solo projects - examples, homepage itself
+! warnings
+! notatka: https://medium.com/@derekgc/deploy-a-react-app-on-github-user-page-25b6991dec87 (druk)
+! pages semantic tags (jak w about)
+! index.html meta section
+! word poprawność
+! github Alias
+! trump readme
+
+[TO DO]:
+- ProjectSection(C) - return button (props history?)
+- About(P) - expand (more tiles)
+- Skills(P) => sections & Projects(P) => details - RWD tables horizontal scroll on small screens: https://mdbootstrap.com/docs/react/tables/scroll/
+
+[TO LEARN]:
+- github pages "link/section" directly entered in browser => 404 not found (why? able to fix?)
+
+[FUTURE DEVELOPMENT]:
+- Projects(P) - website references => projects navigation, chosen projects cards
+- Page Header (nav) - sticked to screen (always visible)
+- FormalEducation(C) - university logo: ask for permision (https://pwr.edu.pl/uczelnia/informacje-ogolne/materialy-promocyjne/logotyp)
+
+[TO REMEMBER]:
+- github pages deploy: https://medium.com/@derekgc/deploy-a-react-app-on-github-user-page-25b6991dec87
 */

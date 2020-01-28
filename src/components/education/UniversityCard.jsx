@@ -9,7 +9,7 @@ import UniversityInfo from './UniversityInfo';
 const UniversityCard = () => {
   return (
       <MDBRow>
-        <MDBCol md="3">
+        <MDBCol md="3" className="mb-2">
           <UniversityImage path="/university.jpg" />
         </MDBCol>
         <MDBCol md="9">

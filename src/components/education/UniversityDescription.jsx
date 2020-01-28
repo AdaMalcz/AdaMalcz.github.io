@@ -6,7 +6,7 @@ const UniversityDescription = props => {
       <header className="text-center">
         <h3>{props.title}</h3>
       </header>
-      <ul class="list-group list-group-flush">
+      <ul className="list-group list-group-flush">
         {props.children}
       </ul>
     </div>

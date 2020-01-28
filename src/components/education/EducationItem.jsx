@@ -5,7 +5,7 @@ const EducationItem = props => {
     <tr>
       <th scope="row">{props.period}</th>
       <td>{props.education}</td>
-      <td>{props.document}</td>
+      <td className="text-center">{props.document}</td>
     </tr>
   );
 };

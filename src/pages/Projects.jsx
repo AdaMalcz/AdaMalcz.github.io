@@ -5,9 +5,13 @@ const Projects = () => {
   return (
     <div>
       <h2>Projects</h2>
+      <p className='text-center' style={{color: 'red'}}>Tempororary (unrouted) page.</p>
 
-      <Link to="/projects/group">Group</Link>
-      <Link to="/projects/solo">Solo</Link>
+      <ul>
+        <li><Link to="/projects/group">Group</Link></li>
+        <li><Link to="/projects/solo">Solo</Link></li>
+      </ul>
+
     </div>
   );
 };

@@ -7,7 +7,7 @@ import HomeDescription from './HomeDescription';
 const HomeCard = props => {
   return (
       <MDBRow>
-        <MDBCol md="3">
+        <MDBCol md="3" className="my-1">
           <HomeImage path={props.path} />
         </MDBCol>
         <MDBCol md="9">

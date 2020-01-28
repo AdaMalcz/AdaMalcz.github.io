@@ -3,7 +3,7 @@ import { MDBRow, MDBCol } from 'mdbreact';
 
 const UniversityInfo = props => {
   return (
-    <li class="list-group-item">
+    <li className="list-group-item">
       <MDBRow>
         <MDBCol md="4"><b>{props.data}</b></MDBCol>
         <MDBCol md="8">{props.value}</MDBCol>

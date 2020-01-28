@@ -3,14 +3,14 @@ import { MDBRow } from 'mdbreact';
 
 import ProjectCard from '../../components/projects/ProjectCard';
 import ProjectSection from '../../components/projects/ProjectSection';
+import ExternalLink from '../../components/ExternalLink';
 
 const ProjectsGroup = () => {
   return (
     <div>
       <MDBRow>
         <ProjectSection title="Coders Camp">
-          {/* LINKI: coders camp,  */}
-          <p>Coders Camp is where I started my adventure with <strong>Web Development</strong>. During three intense months I worked on 3 group projects, covering 5 major course topics <small>(and all tools associated with them)</small>:</p>
+          <p><ExternalLink href="https://coderscrew.pl/projekt-coderscamp/">Coders Camp</ExternalLink> is where I started my adventure with <strong>Web Development</strong>. During three intense months I worked on 3 group projects, covering 5 major course topics <small>(and all tools associated with them)</small>:</p>
           <ul>
             <li>HTML and CSS</li>
             <li>JavaScript Basics</li>
@@ -53,8 +53,8 @@ const ProjectsGroup = () => {
             <i className="fab fa-html5 mx-2"></i>
             <i className="fab fa-css3-alt mx-2"></i>
             <i className="fab fa-js mx-2"></i>
-            <i class="fab fa-react mx-2"></i>
-            <i class="fab fa-node-js mx-2"></i>
+            <i className="fab fa-react mx-2"></i>
+            <i className="fab fa-node-js mx-2"></i>
           </div>}
           title="BookSwap"
           description="BookSwap is unique web platform for books enthusiast. Main goal of the application is to create a community as well as the tool for searching, reviewing and exchanging books between community members using own database and API."

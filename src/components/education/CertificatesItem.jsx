@@ -6,7 +6,7 @@ const EducationItem = props => {
       <th scope="row">{props.certificate}</th>
       <td><a href={props.link} target="_blank">{props.organization}</a></td>
       <td>{props.skills}</td>
-      <td>{props.document}</td>
+      <td className="text-center">{props.document}</td>
       <td>{props.date}</td>
     </tr>
   );

@@ -7,7 +7,7 @@ import PersonDescription from './PersonDescription';
 const PersonCard = () => {
   return (
       <MDBRow>
-        <MDBCol md="3">
+        <MDBCol md="3" className="mb-2">
           <PersonImage path="/me.jpg" />
         </MDBCol>
         <MDBCol md="9">

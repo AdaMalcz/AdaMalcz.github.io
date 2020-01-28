@@ -24,8 +24,6 @@ const About = () => {
             <ImgLink route="/about/programming" path="/programming.png" name="Programming" />
           </ImgNav>
         </section>
-        
-        <br/><br/>
 
         <section>
           <Switch>

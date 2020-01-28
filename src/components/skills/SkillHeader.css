@@ -1,0 +1,9 @@
+.tools-list {
+  max-height: 250px;
+}
+
+@media only screen and (max-width: 540px) {
+  .tools-list {
+    max-height: none;
+  }
+}

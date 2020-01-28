@@ -13,7 +13,7 @@ const Chess = () => {
           technologies="HTML, CSS, JavaScript" 
           group="5-6 people" 
           time="2 weeks" 
-          repo={<h3><i class="fab fa-github"></i></h3>}
+          repo={<h3><i className="fab fa-github"></i></h3>}
           link="https://github.com/GWitczak/dt.Chess"
         />
         <p>Project has nice looking interface and enables to choose from different color styles. Active pawns are highlighted, as well as legal moves and attack fields for selected pawn.</p>

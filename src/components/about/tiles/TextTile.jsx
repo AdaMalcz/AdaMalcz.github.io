@@ -5,8 +5,8 @@ const TextTile = props => {
     <div className="tile">
         <img src={props.path} alt={props.alt} />
         <div className="overlay overlay-text">
-          <h3>{props.title}</h3>
-          <br/>
+          <h4>{props.title}</h4>
+          
           <p>{props.description}</p>
         </div>
       </div>

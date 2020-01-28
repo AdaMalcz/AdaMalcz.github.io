@@ -5,7 +5,7 @@ const EducationList = props => {
   return (
     <MDBRow>
       <MDBCol>
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">Period</th>

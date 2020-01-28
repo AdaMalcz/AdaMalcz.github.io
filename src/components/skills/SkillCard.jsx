@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SkillHeader from './SkillHeader';
+import SkillHeader from './SkillHeader'; 
 import SkillExperience from './SkillExperience';
 import SkillTable from './SkillTable';
 
@@ -17,3 +17,8 @@ const SkillCard = props => {
 };
 
 export default SkillCard;
+
+/*
+[TO REMEMBER]:
+- multi column list: https://stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns
+*/

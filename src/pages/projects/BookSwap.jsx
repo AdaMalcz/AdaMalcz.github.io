@@ -14,11 +14,18 @@ const BookSwap = () => {
           technologies="HTML, CSS, JavaScript, React, Node.js" 
           group="4 people" 
           time="2 weeks (back-end) 2 weeks (front-end)" 
-          repo={<h3><i class="fab fa-github"></i></h3>}
+          repo={<h3><i className="fab fa-github"></i></h3>}
           link="https://github.com/JoannaGulacz/Bookswap"
         />
         <p>Main goals of the project was to 1. create own database with API; 2. create app interface using React</p>
       </ProjectSection>
+
+      <h3>Running</h3>
+      <p>To properly launch the application on your device, follow these steps:</p>
+      <ul>
+        <li><b>Install</b> <small>(npm i)</small> packages in folders: project folder (main), server, client.</li>
+        <li><b>Run</b> <small>(npm start)</small> both: server, client.</li>
+      </ul>
       
       <h3>Gallery</h3>
       <MDBRow>
