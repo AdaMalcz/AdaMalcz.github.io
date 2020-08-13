@@ -58,7 +58,6 @@ export default root;
 ! pages semantic tags (jak w about)
 ! index.html meta section
 ! word poprawność
-! github Alias
 ! trump readme
 
 [TO DO]:
@@ -73,6 +72,7 @@ export default root;
 - Projects(P) - website references => projects navigation, chosen projects cards
 - Page Header (nav) - sticked to screen (always visible)
 - FormalEducation(C) - university logo: ask for permision (https://pwr.edu.pl/uczelnia/informacje-ogolne/materialy-promocyjne/logotyp)
+- github custom domain (alias): https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain
 
 [TO REMEMBER]:
 - github pages deploy: https://medium.com/@derekgc/deploy-a-react-app-on-github-user-page-25b6991dec87
